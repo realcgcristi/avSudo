@@ -8,11 +8,11 @@ You have an unrooted device and want to use sudo in termux? This is the right .d
 
 ### Now, lets sync.
 ```dpkg --configure -a```
-
+------
 ### (IF you dont have git installed)
 ### Install git
 ```apt install git```
-
+------
 ### Now, clone the repo.
 ```git clone https://github.com/realcgcristi/avSudo.git```
 
