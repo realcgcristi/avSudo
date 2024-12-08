@@ -34,3 +34,19 @@ You have an unrooted device and want to use sudo in termux? This is the right .d
 ```nano /data/data/com.termux/files/usr/etc/sudoers``` (and add ur user and put a password, i say u put all for perms - ```layout: username|All|password```)
 
 ### Enjoy!
+
+------
+# QnA
+### Q: I get the error "*username* isn't in the sudoers file"
+### A: Add your user, the sudoers file is located at /data/data/com.termux/files/usr/etc/sudoers - use nano, etc. to edit, layout is: *username*|All|*password*
+
+### Q: I get an error that idk how to fix
+### A: Github Issues, tell me there anything.
+
+### Q: Will this give me FULL access to everything possible?
+### A: For the most part, yes. avSudo provides root-like access for most commands. However, some unrooted devices are still limited by the system kernel. While avSudo removes many restrictions, certain kernel-level limitations may still apply.
+
+------
+# What is avSudo? Why does it exist?
+
+### I originally created avSudo for myself because I needed root access for using Docker (yes, I got it working!). Since Docker requires root for some commands, I built avSudo to provide a way to use sudo on unrooted devices. Now, I'm releasing it so others can use it for tasks that would normally require root access, enabling more functionality on unrooted devices.
