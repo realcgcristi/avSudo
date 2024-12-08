@@ -24,14 +24,17 @@ You have an unrooted device and want to use sudo in termux? This is the right .d
 ### KEEP IN MIND: IT WILL FAIL.
 
 ### Now, that it gave a postinst file error, lets "fix it"
-```rm -f /data/data/com.termux/files/usr/var/lib/dpkg/info/sudo.postinst```
+```rm -f /data/data/com.termux/files/usr/var/lib/dpkg/info/sudo.postinst``` 
+</br>
 ```rm -f /data/data/com.termux/files/usr/var/lib/dpkg/info/sudo.*```
 
 ### Now, lets reconfigure it.
 ```dpkg --configure sudo```
 
 ### Now, edit the sudoers file.
-```nano /data/data/com.termux/files/usr/etc/sudoers``` (and add ur user and put a password, i say u put all for perms - ```layout: username|All|password```)
+```nano /data/data/com.termux/files/usr/etc/sudoers```
+</br>
+(and add ur user and put a password, i say u put all for perms - ```layout: username|All|password```)
 
 ### Enjoy!
 
